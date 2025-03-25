@@ -1,0 +1,213 @@
+2025-03-25 04:28:28,273 - UrbanFarmAI - INFO - Initializing UrbanFarmAI application
+2025-03-25 04:28:28,274 - UrbanFarmAI - INFO - Model file found at: app\models\crop_recommender.joblib
+2025-03-25 04:28:28,276 - __main__ - CRITICAL - Application failed to start: 'DataProcessor' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\data_processor.py", line 202, in load_model
+    self.logger.info(f"Loading model from: {model_path}")
+    ^^^^^^^^^^^
+AttributeError: 'DataProcessor' object has no attribute 'logger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 471, in <module>
+    app = UrbanFarmAI()
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 50, in __init__
+    if not self.data_processor.load_model():
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\data_processor.py", line 216, in load_model
+    self.logger.error(f"Error loading model: {str(e)}", exc_info=True)
+    ^^^^^^^^^^^
+AttributeError: 'DataProcessor' object has no attribute 'logger'
+2025-03-25 04:35:20,381 - UrbanFarmAI - INFO - Initializing UrbanFarmAI application
+2025-03-25 04:35:20,381 - app.utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: C:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 04:35:20,381 - app.utils.data_processor.DataProcessor - INFO - Model path set to: C:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 04:35:20,382 - UrbanFarmAI - INFO - Model file not found, training new model
+2025-03-25 04:35:20,382 - app.utils.data_processor.DataProcessor - INFO - Starting model training process...
+2025-03-25 04:35:20,398 - app.utils.data_processor.DataProcessor - INFO - Loaded dataset with shape: (2200, 8)
+2025-03-25 04:35:20,399 - app.utils.data_processor.DataProcessor - INFO - Normalized column names: ['n', 'p', 'k', 'temperature', 'humidity', 'ph_value', 'rainfall', 'label']
+2025-03-25 04:35:20,419 - app.utils.data_processor.DataProcessor - INFO - Cleaned dataset shape: (1846, 8)
+2025-03-25 04:35:20,419 - app.utils.data_processor.DataProcessor - INFO - Data loaded successfully with shape: (1846, 8)
+2025-03-25 04:35:20,419 - app.utils.data_processor.DataProcessor - INFO - Using feature columns: ['n', 'p', 'k', 'temperature', 'humidity', 'ph_value', 'rainfall']
+2025-03-25 04:35:20,424 - app.utils.data_processor.DataProcessor - INFO - Training Random Forest model...
+2025-03-25 04:35:20,636 - app.utils.data_processor.DataProcessor - INFO - Model trained with accuracy: 0.9919
+2025-03-25 04:35:20,636 - app.utils.data_processor.DataProcessor - INFO - Saving model to: app\models\crop_recommender.joblib
+2025-03-25 04:35:20,656 - app.utils.data_processor.DataProcessor - INFO - Saving scaler to: app\models\scaler.joblib
+2025-03-25 04:35:20,657 - app.utils.data_processor.DataProcessor - INFO - Model and scaler saved successfully
+2025-03-25 04:35:20,657 - app.utils.data_processor.DataProcessor - INFO - Model training completed successfully
+2025-03-25 04:35:20,692 - __main__ - CRITICAL - Application failed to start: 'ModernSlider' object has no attribute 'slider'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 498, in <module>
+    app = UrbanFarmAI()
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 78, in __init__
+    self._add_frame(CropAdvisorFrame, "Crop Advisor")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 143, in _add_frame
+    frame_instance = frame_class(
+        master=tab,
+    ...<2 lines>...
+        fg_color="#FFFFFF"
+    )
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 395, in __init__
+    slider = ModernSlider(slider_frame, label_text, min_val, max_val)
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 60, in __init__
+    self.configure(fg_color="transparent")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 96, in configure
+    self.slider.configure(**kwargs)
+    ^^^^^^^^^^^
+AttributeError: 'ModernSlider' object has no attribute 'slider'
+2025-03-25 04:35:37,771 - UrbanFarmAI - INFO - Initializing UrbanFarmAI application
+2025-03-25 04:35:37,772 - app.utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 04:35:37,773 - app.utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 04:35:37,774 - UrbanFarmAI - INFO - Model file found at: app\models\crop_recommender.joblib
+2025-03-25 04:35:37,774 - app.utils.data_processor.DataProcessor - INFO - Loading model from: app\models\crop_recommender.joblib
+2025-03-25 04:35:37,804 - app.utils.data_processor.DataProcessor - INFO - Loading scaler from: app\models\scaler.joblib
+2025-03-25 04:35:37,814 - app.utils.data_processor.DataProcessor - INFO - Model loaded successfully
+2025-03-25 04:35:37,835 - __main__ - CRITICAL - Application failed to start: 'ModernSlider' object has no attribute 'slider'
+Traceback (most recent call last):
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 498, in <module>
+    app = UrbanFarmAI()
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 78, in __init__
+    self._add_frame(CropAdvisorFrame, "Crop Advisor")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 143, in _add_frame
+    frame_instance = frame_class(
+        master=tab,
+    ...<2 lines>...
+        fg_color="#FFFFFF"
+    )
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 395, in __init__
+    slider = ModernSlider(slider_frame, label_text, min_val, max_val)
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 60, in __init__
+    self.configure(fg_color="transparent")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 96, in configure
+    self.slider.configure(**kwargs)
+    ^^^^^^^^^^^
+AttributeError: 'ModernSlider' object has no attribute 'slider'
+2025-03-25 04:35:59,956 - UrbanFarmAI - INFO - Initializing UrbanFarmAI application
+2025-03-25 04:35:59,956 - app.utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 04:35:59,956 - app.utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 04:35:59,957 - UrbanFarmAI - INFO - Model file found at: app\models\crop_recommender.joblib
+2025-03-25 04:35:59,957 - app.utils.data_processor.DataProcessor - INFO - Loading model from: app\models\crop_recommender.joblib
+2025-03-25 04:35:59,987 - app.utils.data_processor.DataProcessor - INFO - Loading scaler from: app\models\scaler.joblib
+2025-03-25 04:35:59,988 - app.utils.data_processor.DataProcessor - INFO - Model loaded successfully
+2025-03-25 04:36:00,020 - __main__ - CRITICAL - Application failed to start: 'ModernSlider' object has no attribute 'slider'
+Traceback (most recent call last):
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 498, in <module>
+    app = UrbanFarmAI()
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 78, in __init__
+    self._add_frame(CropAdvisorFrame, "Crop Advisor")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 143, in _add_frame
+    frame_instance = frame_class(
+        master=tab,
+    ...<2 lines>...
+        fg_color="#FFFFFF"
+    )
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 395, in __init__
+    slider = ModernSlider(slider_frame, label_text, min_val, max_val)
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 60, in __init__
+    self.configure(fg_color="transparent")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 96, in configure
+    self.slider.configure(**kwargs)
+    ^^^^^^^^^^^
+AttributeError: 'ModernSlider' object has no attribute 'slider'
+2025-03-25 04:46:54,246 - UrbanFarmAI - INFO - Initializing UrbanFarmAI application
+2025-03-25 04:46:54,246 - app.utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 04:46:54,246 - app.utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 04:46:54,246 - UrbanFarmAI - INFO - SustainabilityBot initialized
+2025-03-25 04:46:54,247 - UrbanFarmAI - INFO - Model file found at: app\models\crop_recommender.joblib
+2025-03-25 04:46:54,247 - app.utils.data_processor.DataProcessor - INFO - Loading model from: app\models\crop_recommender.joblib
+2025-03-25 04:46:54,286 - app.utils.data_processor.DataProcessor - INFO - Loading scaler from: app\models\scaler.joblib
+2025-03-25 04:46:54,302 - app.utils.data_processor.DataProcessor - INFO - Model loaded successfully
+2025-03-25 04:46:54,337 - __main__ - CRITICAL - Application failed to start: ['command'] are not supported arguments. Look at the documentation for supported arguments.
+Traceback (most recent call last):
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 531, in <module>
+    app = UrbanFarmAI()
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 99, in __init__
+    self._add_frame(CropAdvisorFrame, "Crop Advisor")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\main.py", line 167, in _add_frame
+    frame_instance = frame_class(
+        master=tab,
+    ...<2 lines>...
+        fg_color="#FFFFFF"
+    )
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 451, in __init__
+    slider = ModernSlider(
+        slider_frame,
+    ...<3 lines>...
+        command=lambda v, k=param_key: self._on_slider_change(k, v)
+    )
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 58, in __init__
+    super().__init__(master, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\OneDrive\Bureau\test\app\utils\interface.py", line 33, in __init__
+    super().__init__(master, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Roaming\Python\Python313\site-packages\customtkinter\windows\widgets\ctk_frame.py", line 33, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Roaming\Python\Python313\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 46, in __init__
+    check_kwargs_empty(kwargs, raise_error=True)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Roaming\Python\Python313\site-packages\customtkinter\windows\widgets\utility\utility_functions.py", line 18, in check_kwargs_empty
+    raise ValueError(f"{list(kwargs_dict.keys())} are not supported arguments. Look at the documentation for supported arguments.")
+ValueError: ['command'] are not supported arguments. Look at the documentation for supported arguments.
+2025-03-25 05:00:58,552 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:00:58,554 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:00:58,711 - utils.interface - WARNING - Could not set seaborn style for plots, using default style
+2025-03-25 05:00:58,851 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:01:11,662 - __main__ - INFO - Received prediction parameters: {'n': 78.61198738170346, 'p': 87.78911564625851, 'k': 117.23856209150325, 'temperature': 36.654804270462634, 'humidity': 64.55696202531645, 'ph': 9.114583333333334, 'rainfall': 194.56869009584665}
+2025-03-25 05:01:11,676 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:05:29,498 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:05:29,498 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:05:29,742 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:05:34,725 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:09:53,581 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:09:53,581 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:09:53,836 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:10:01,482 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:11:32,508 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:11:32,512 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:11:32,773 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:11:35,125 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:12:16,557 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Papaya
+2025-03-25 05:19:19,902 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:19:19,904 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:19:20,976 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:19:33,481 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:20:00,557 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:20:05,997 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:20:13,440 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Coffee
+2025-03-25 05:23:20,679 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:23:20,680 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:23:21,398 - __main__ - ERROR - Application error: 'CTkTextbox' object has no attribute 'tag_configure'
+2025-03-25 05:24:36,788 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:24:36,792 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:24:37,540 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:24:40,980 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:25:02,681 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:27:06,938 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:27:06,939 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:27:07,676 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:27:13,561 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 05:30:00,551 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 05:30:00,552 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 05:30:01,302 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 05:30:21,942 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 06:16:54,552 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 06:16:54,553 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 06:16:55,509 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 06:17:00,716 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 06:40:38,459 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 06:40:38,461 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 06:40:40,303 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 06:44:31,471 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: PigeonPeas
+2025-03-25 07:07:58,115 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: PigeonPeas
+2025-03-25 07:16:44,341 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
+2025-03-25 07:26:46,039 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
+2025-03-25 08:00:27,983 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
