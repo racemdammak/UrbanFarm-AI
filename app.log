@@ -211,3 +211,21 @@ ValueError: ['command'] are not supported arguments. Look at the documentation f
 2025-03-25 07:16:44,341 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
 2025-03-25 07:26:46,039 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
 2025-03-25 08:00:27,983 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: ChickPea
+2025-03-25 08:12:44,549 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 08:12:44,550 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 08:12:45,394 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 08:12:48,783 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 08:19:41,227 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Muskmelon
+2025-03-25 08:20:45,390 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 08:20:45,391 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 08:20:46,079 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 08:22:23,941 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 08:22:23,942 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 08:22:24,690 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 08:22:33,087 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 08:25:52,018 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 08:25:52,019 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 08:25:52,721 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 08:25:57,226 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 08:26:11,211 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 08:28:29,649 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Rice

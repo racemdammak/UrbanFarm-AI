@@ -1,0 +1,65 @@
+================================================================================
+URBAN FARM AI - CROP RECOMMENDATION REPORT
+================================================================================
+
+Generated on: March 25, 2025 at 08:12
+
+--------------------------------------------------------------------------------
+TOP RECOMMENDED CROPS
+--------------------------------------------------------------------------------
+
+1. Banana
+   Confidence Score: 25.0%
+   Key Growing Tips:
+   • Ensure proper soil preparation before planting
+   • Monitor water needs regularly
+   • Watch for signs of pest infestation
+   • Maintain appropriate spacing between plants
+
+2. Coffee
+   Confidence Score: 22.0%
+
+3. ChickPea
+   Confidence Score: 19.0%
+
+--------------------------------------------------------------------------------
+SOIL PARAMETERS
+--------------------------------------------------------------------------------
+Nitrogen (N):     70.0 mg/kg
+Phosphorus (P):   72.5 mg/kg
+Potassium (K):    102.5 mg/kg
+pH Value:         7.0
+
+--------------------------------------------------------------------------------
+CLIMATE PARAMETERS
+--------------------------------------------------------------------------------
+Temperature:      25.0°C
+Humidity:         50.0%
+Rainfall:         150.0 mm
+
+--------------------------------------------------------------------------------
+ANALYSIS & RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+Soil Analysis:
+• Soil pH is in optimal range for most crops.
+
+Climate Analysis:
+• Temperature is in optimal range for most crops.
+• Humidity levels are suitable for most crops.
+• Rainfall levels are adequate for most crops.
+
+--------------------------------------------------------------------------------
+SUSTAINABILITY TIPS
+--------------------------------------------------------------------------------
+
+• Practice crop rotation to maintain soil health and prevent pest buildup
+• Consider companion planting to maximize space and improve crop yields
+• Implement water-efficient irrigation systems like drip irrigation
+• Use organic mulch to retain soil moisture and suppress weeds
+• Monitor and maintain proper pH levels for optimal nutrient absorption
+
+================================================================================
+Thank you for using Urban Farm AI!
+For more information and support, visit our website or contact our support team.
+================================================================================

@@ -8,6 +8,7 @@ import datetime
 import logging
 import tkinter as tk
 import tkinter.ttk as ttk
+import tkinter.messagebox as messagebox
 
 # Get logger
 logger = logging.getLogger(__name__)
@@ -603,7 +604,7 @@ class CropAdvisorFrame(ModernFrame):
                 
         except Exception as e:
             logger.error(f"Error in predict button handler: {str(e)}")
-
+    
     def set_initial_values(self):
         """Set initial values for all sliders."""
         try:
