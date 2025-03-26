@@ -229,3 +229,13 @@ ValueError: ['command'] are not supported arguments. Look at the documentation f
 2025-03-25 08:25:57,226 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
 2025-03-25 08:26:11,211 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
 2025-03-25 08:28:29,649 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Rice
+2025-03-25 10:32:44,846 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-25 10:32:44,851 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-25 10:32:45,875 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-25 10:41:44,895 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 10:42:14,255 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana
+2025-03-25 10:55:30,966 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Coffee
+2025-03-26 15:24:07,835 - utils.data_processor.DataProcessor - INFO - DataProcessor initialized with data path: c:\Users\ADMIN\OneDrive\Bureau\test\app\data\Crop_Recommendation.csv
+2025-03-26 15:24:07,836 - utils.data_processor.DataProcessor - INFO - Model path set to: c:\Users\ADMIN\OneDrive\Bureau\test\app\models\crop_recommender.joblib
+2025-03-26 15:24:09,354 - utils.data_processor.DataProcessor - INFO - Model and scaler loaded successfully
+2025-03-26 15:24:26,307 - utils.data_processor.DataProcessor - INFO - Prediction successful. Top prediction: Banana

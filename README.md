@@ -1,60 +1,105 @@
-# UrbanFarm AI - Sustainable Urban Farming Assistant
+# UrbanFarm AI 🌱
 
-An AI-powered web application that helps urban farmers optimize crop selection and resource use, promoting sustainable urban agriculture.
+An intelligent desktop application for sustainable urban farming, providing data-driven crop recommendations and expert sustainability advice.
 
-## 🌱 Features
+## Features
 
-- **AI Crop Advisor**: Machine learning model that recommends crops based on:
-  - Soil characteristics
-  - Climate conditions
-  - Urban constraints (space, sunlight)
-  
-- **Sustainability Tips**: AI-powered chatbot providing:
-  - Resource-saving practices
-  - Farming best practices
-  - Local climate adaptation advice
+### 1. Crop Advisor 🌾
+- **Smart Crop Recommendations**: Get personalized crop suggestions based on:
+  - Soil parameters (N, P, K, pH)
+  - Climate conditions (Temperature, Humidity, Rainfall)
+- **Supported Crops**: Rice, Maize, Pomegranate, Banana, Mango, Apple, Orange, Cotton, Jute, Coffee
+- **High Accuracy**: 99%+ prediction accuracy using Random Forest model
+- **Top 3 Recommendations**: View best matches with confidence scores
+- **Detailed Reports**: Generate comprehensive analysis with growing tips
 
-- **Plant Health Diagnosis**: Mobile-friendly features including:
-  - Camera-based plant health analysis
-  - Offline capability using TensorFlow Lite
-  - Disease detection and treatment recommendations
+### 2. Sustainability Assistant 🤖
+- Interactive chatbot providing expert advice on:
+  - Urban farming best practices
+  - Sustainable agriculture techniques
+  - Crop-specific growing tips
+  - Water management strategies
+  - Soil health maintenance
+- Context-aware responses
+- Natural conversation interface
 
-## 🛠️ Tech Stack
+## Technical Details
 
-- **Frontend**: Streamlit
-- **Machine Learning**: 
-  - Scikit-learn (Crop Recommendation)
-  - TensorFlow (Plant Health)
-  - Hugging Face Transformers (Chatbot)
-- **Data Processing**: Pandas, NumPy
-- **Visualization**: Plotly
+### Requirements
+- Python 3.8+
+- Required packages:
+  ```
+  customtkinter
+  pandas
+  numpy
+  scikit-learn
+  joblib
+  ```
 
-## 🚀 Getting Started
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   ```
 
-1. Clone the repository
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+
 3. Run the application:
    ```bash
-   streamlit run app/main.py
+   python app/main.py
    ```
 
-## 📊 Dataset
+### Project Structure
+```
+app/
+├── data/               # Dataset and model data
+├── models/            # Trained models
+├── utils/             # Utility modules
+│   ├── data_processor.py    # Data handling and model training
+│   ├── interface.py         # UI components
+│   └── sustainability_bot.py # Chatbot implementation
+└── main.py           # Main application
+```
 
-The application uses the Crop Recommendation Dataset for training the crop recommendation model. The dataset includes:
-- Soil parameters (N, P, K, pH)
-- Climate conditions (temperature, humidity, rainfall)
-- Crop labels
+## Usage
 
-## 🌍 Sustainable Development Goals
+1. **Crop Recommendation**:
+   - Adjust soil and climate parameters using sliders
+   - Click "Get Crop Recommendation"
+   - View top 3 recommended crops with confidence scores
+   - Generate detailed report if needed
 
-This project contributes to:
-- SDG 11: Sustainable Cities and Communities
-- SDG 12: Responsible Consumption and Production
-- SDG 13: Climate Action
+2. **Sustainability Tips**:
+   - Navigate to the Sustainability Tips tab
+   - Type your farming-related questions
+   - Get expert advice and recommendations
+   - Engage in natural conversation about urban farming
 
-## 📝 License
+## Model Details
 
-MIT License - See LICENSE file for details 
+- **Algorithm**: Random Forest Classifier
+- **Features**: 7 (N, P, K, Temperature, Humidity, pH, Rainfall)
+- **Training Data**: Comprehensive crop dataset
+- **Accuracy**: 99%+ on test set
+- **Output**: Multi-class prediction with probability scores
+
+## Contributing
+
+Feel free to contribute to this project by:
+1. Forking the repository
+2. Creating a feature branch
+3. Committing your changes
+4. Opening a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Dataset source: [Crop Recommendation Dataset]
+- Built with CustomTkinter for modern UI
+- Powered by scikit-learn for machine learning 

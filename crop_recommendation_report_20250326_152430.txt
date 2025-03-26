@@ -2,52 +2,54 @@
 URBAN FARM AI - CROP RECOMMENDATION REPORT
 ================================================================================
 
-Generated on: March 25, 2025 at 08:12
+Generated on: March 26, 2025 at 15:24
 
 --------------------------------------------------------------------------------
 TOP RECOMMENDED CROPS
 --------------------------------------------------------------------------------
 
 1. Banana
-   Confidence Score: 25.0%
+   Confidence Score: 50.0%
    Key Growing Tips:
    • Ensure proper soil preparation before planting
    • Monitor water needs regularly
    • Watch for signs of pest infestation
    • Maintain appropriate spacing between plants
 
-2. Coffee
-   Confidence Score: 22.0%
+2. Papaya
+   Confidence Score: 25.0%
 
-3. ChickPea
-   Confidence Score: 19.0%
+3. Watermelon
+   Confidence Score: 12.0%
 
 --------------------------------------------------------------------------------
 SOIL PARAMETERS
 --------------------------------------------------------------------------------
-Nitrogen (N):     70.0 mg/kg
-Phosphorus (P):   72.5 mg/kg
-Potassium (K):    102.5 mg/kg
-pH Value:         7.0
+Nitrogen (N):     122.3 mg/kg
+Phosphorus (P):   124.3 mg/kg
+Potassium (K):    138.0 mg/kg
+pH Value:         4.5
 
 --------------------------------------------------------------------------------
 CLIMATE PARAMETERS
 --------------------------------------------------------------------------------
-Temperature:      25.0°C
-Humidity:         50.0%
-Rainfall:         150.0 mm
+Temperature:      41.5°C
+Humidity:         79.1%
+Rainfall:         58.5 mm
 
 --------------------------------------------------------------------------------
 ANALYSIS & RECOMMENDATIONS
 --------------------------------------------------------------------------------
 
 Soil Analysis:
-• Soil pH is in optimal range for most crops.
+• Nitrogen levels are high. Monitor plant growth for excessive vegetative growth.
+• Phosphorus levels are high. Avoid adding phosphorus-rich fertilizers.
+• Soil is acidic. Consider adding lime to raise pH.
 
 Climate Analysis:
-• Temperature is in optimal range for most crops.
+• Temperature is high. Provide shade and adequate irrigation.
 • Humidity levels are suitable for most crops.
-• Rainfall levels are adequate for most crops.
+• Rainfall is low. Implement irrigation system and moisture conservation practices.
 
 --------------------------------------------------------------------------------
 SUSTAINABILITY TIPS
